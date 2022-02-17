@@ -3,54 +3,20 @@
 #include <stdio.h>
 #include <math.h>
 
-//int main()
-//{
-//	int userN; 
-//	int countN=0; 
-//	int currentN=1; 
-//	printf("Enter the value of n: ");
-//	scanf("%d", &userN); 
-//	for (currentN = 1; currentN <= userN; ++currentN) {
-//		if ((currentN % 7)== 0) {
-//			printf("%d ", currentN);
-//				countN = countN + 1;
-//		}
-//	}
-//	printf("\n Total numbers found: %d", countN); 
-//
-//}
-
 int main()
 {
-	int treeH; 
-	int i = 0;
-	int j = 0; 
-	int w = 0; 
-	int x = 0; 
-	printf("Enter the tree height: "); 
-	scanf("%d", &treeH ); 
-	while (treeH < 3) {
-	printf("This entry is not valid\n");
-	printf("Enter the tree height: ");
-	scanf("%d", &treeH);
-	}
-	for (i = 1; i <= treeH; i++) {
-		for (w = 0; w < (treeH - i); w++) {
-			printf(" ");
+	int userN; 
+	int countN=0; 
+	int currentN=1; 
+	printf("Enter the value of n: ");
+	scanf("%d", &userN); 
+	for (currentN = 1; currentN <= userN; ++currentN) {
+		if ((currentN % 7)== 0) {
+			printf("%d ", currentN);
+				countN = countN + 1;
 		}
-		for (j = 0; j < (2 * i) - 1; j++) {
-			printf("*");
-		}
-		printf("\n");
 	}
-	for (x = 1; x < treeH; ++x) {
-		printf(" "); 
-	}
-	printf("*\n");
-	for (x = 1; x < treeH; ++x) {
-		printf(" ");
-	}
-	printf("*");
+	printf("\n Total numbers found: %d", countN); 
 
 }
 
